@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBB59C67D15B7B795069D18B /* libPods-LXPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAC0C2DFB3F24900008F183 /* libPods-LXPlayer.a */; };
+		F32FDB9B2010915000F3E4DE /* LXPresentSupportController.m in Sources */ = {isa = PBXBuildFile; fileRef = F32FDB9A2010915000F3E4DE /* LXPresentSupportController.m */; };
+		F32FDB9E2010916D00F3E4DE /* LXPresentNotSupportController.m in Sources */ = {isa = PBXBuildFile; fileRef = F32FDB9D2010916D00F3E4DE /* LXPresentNotSupportController.m */; };
+		F34472B820104BD30029FD61 /* LXPlayTypeListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F34472B720104BD30029FD61 /* LXPlayTypeListController.m */; };
+		F34472BB20104F3A0029FD61 /* LXPushNotSupportRotateController.m in Sources */ = {isa = PBXBuildFile; fileRef = F34472BA20104F3A0029FD61 /* LXPushNotSupportRotateController.m */; };
+		F367DFBF200F4F2300EA5DB5 /* LXPlayLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F367DFBD200F4F2300EA5DB5 /* LXPlayLoadingView.m */; };
+		F392CB4D1FF61A1D00C98CFA /* LXProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = F392CB481FF61A1D00C98CFA /* LXProgressView.m */; };
+		F392CB4E1FF61A1D00C98CFA /* LXSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = F392CB4A1FF61A1D00C98CFA /* LXSlider.m */; };
+		F392CB4F1FF61A1D00C98CFA /* LXSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F392CB4C1FF61A1D00C98CFA /* LXSliderView.m */; };
+		F39F626B1FFC6DAB00D6C1CF /* UIViewController+LXPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F39F626A1FFC6DAB00D6C1CF /* UIViewController+LXPlayerRotation.m */; };
+		F39F62711FFC6E4E00D6C1CF /* UINavigationController+LXPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F39F62701FFC6E4E00D6C1CF /* UINavigationController+LXPlayerRotation.m */; };
+		F39F62741FFC6EEA00D6C1CF /* UITabBarController+LXPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F39F62731FFC6EEA00D6C1CF /* UITabBarController+LXPlayerRotation.m */; };
+		F39F627A1FFC716400D6C1CF /* UIWindow+LXCurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F39F62791FFC716400D6C1CF /* UIWindow+LXCurrentViewController.m */; };
+		F3B1294B1FD53D5600895FA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B1294A1FD53D5600895FA1 /* main.m */; };
+		F3B1294E1FD53D5600895FA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B1294D1FD53D5600895FA1 /* AppDelegate.m */; };
+		F3B129511FD53D5600895FA1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B129501FD53D5600895FA1 /* ViewController.m */; };
+		F3B129541FD53D5600895FA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B129521FD53D5600895FA1 /* Main.storyboard */; };
+		F3B129561FD53D5600895FA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3B129551FD53D5600895FA1 /* Assets.xcassets */; };
+		F3B129591FD53D5600895FA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B129571FD53D5600895FA1 /* LaunchScreen.storyboard */; };
+		F3B129641FD53D5700895FA1 /* LXPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B129631FD53D5700895FA1 /* LXPlayerTests.m */; };
+		F3B1296F1FD53D5700895FA1 /* LXPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B1296E1FD53D5700895FA1 /* LXPlayerUITests.m */; };
+		F3B129801FD541D000895FA1 /* LxButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B1297F1FD541D000895FA1 /* LxButton.m */; };
+		F3B129831FD541D800895FA1 /* UILabel+LXLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B129821FD541D800895FA1 /* UILabel+LXLabel.m */; };
+		F3B129861FD541DF00895FA1 /* UIView+LX_Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B129851FD541DF00895FA1 /* UIView+LX_Frame.m */; };
+		F3B1298A1FD5438F00895FA1 /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B129891FD5438F00895FA1 /* UIColor+Expanded.m */; };
+		F3B1298E1FD5459A00895FA1 /* LXAVPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B1298D1FD5459A00895FA1 /* LXAVPlayView.m */; };
+		F3B129911FD545C100895FA1 /* LXAVPlayControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B129901FD545C100895FA1 /* LXAVPlayControllView.m */; };
+		F3B129941FD545D200895FA1 /* LXPlayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B129931FD545D200895FA1 /* LXPlayModel.m */; };
+		F3B129981FD5485600895FA1 /* LXPlayVerticalController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B129971FD5485600895FA1 /* LXPlayVerticalController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3B129601FD53D5700895FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3B1293E1FD53D5600895FA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3B129451FD53D5600895FA1;
+			remoteInfo = LXPlayer;
+		};
+		F3B1296B1FD53D5700895FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3B1293E1FD53D5600895FA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3B129451FD53D5600895FA1;
+			remoteInfo = LXPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5682E24906F047E0B877AEF2 /* Pods-LXPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-LXPlayer/Pods-LXPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		78A11FB53ECEAE66B60DE12B /* Pods-LXPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LXPlayer/Pods-LXPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		BBAC0C2DFB3F24900008F183 /* libPods-LXPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LXPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32FDB992010915000F3E4DE /* LXPresentSupportController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXPresentSupportController.h; sourceTree = "<group>"; };
+		F32FDB9A2010915000F3E4DE /* LXPresentSupportController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXPresentSupportController.m; sourceTree = "<group>"; };
+		F32FDB9C2010916D00F3E4DE /* LXPresentNotSupportController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXPresentNotSupportController.h; sourceTree = "<group>"; };
+		F32FDB9D2010916D00F3E4DE /* LXPresentNotSupportController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXPresentNotSupportController.m; sourceTree = "<group>"; };
+		F34472B620104BD30029FD61 /* LXPlayTypeListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXPlayTypeListController.h; sourceTree = "<group>"; };
+		F34472B720104BD30029FD61 /* LXPlayTypeListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXPlayTypeListController.m; sourceTree = "<group>"; };
+		F34472B920104F3A0029FD61 /* LXPushNotSupportRotateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXPushNotSupportRotateController.h; sourceTree = "<group>"; };
+		F34472BA20104F3A0029FD61 /* LXPushNotSupportRotateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXPushNotSupportRotateController.m; sourceTree = "<group>"; };
+		F367DFBD200F4F2300EA5DB5 /* LXPlayLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPlayLoadingView.m; sourceTree = "<group>"; };
+		F367DFBE200F4F2300EA5DB5 /* LXPlayLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPlayLoadingView.h; sourceTree = "<group>"; };
+		F392CB471FF61A1D00C98CFA /* LXProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXProgressView.h; sourceTree = "<group>"; };
+		F392CB481FF61A1D00C98CFA /* LXProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXProgressView.m; sourceTree = "<group>"; };
+		F392CB491FF61A1D00C98CFA /* LXSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXSlider.h; sourceTree = "<group>"; };
+		F392CB4A1FF61A1D00C98CFA /* LXSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSlider.m; sourceTree = "<group>"; };
+		F392CB4B1FF61A1D00C98CFA /* LXSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXSliderView.h; sourceTree = "<group>"; };
+		F392CB4C1FF61A1D00C98CFA /* LXSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSliderView.m; sourceTree = "<group>"; };
+		F39F62691FFC6DAB00D6C1CF /* UIViewController+LXPlayerRotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LXPlayerRotation.h"; sourceTree = "<group>"; };
+		F39F626A1FFC6DAB00D6C1CF /* UIViewController+LXPlayerRotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LXPlayerRotation.m"; sourceTree = "<group>"; };
+		F39F626F1FFC6E4E00D6C1CF /* UINavigationController+LXPlayerRotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+LXPlayerRotation.h"; sourceTree = "<group>"; };
+		F39F62701FFC6E4E00D6C1CF /* UINavigationController+LXPlayerRotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+LXPlayerRotation.m"; sourceTree = "<group>"; };
+		F39F62721FFC6EEA00D6C1CF /* UITabBarController+LXPlayerRotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+LXPlayerRotation.h"; sourceTree = "<group>"; };
+		F39F62731FFC6EEA00D6C1CF /* UITabBarController+LXPlayerRotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+LXPlayerRotation.m"; sourceTree = "<group>"; };
+		F39F62781FFC716400D6C1CF /* UIWindow+LXCurrentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+LXCurrentViewController.h"; sourceTree = "<group>"; };
+		F39F62791FFC716400D6C1CF /* UIWindow+LXCurrentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+LXCurrentViewController.m"; sourceTree = "<group>"; };
+		F3B129461FD53D5600895FA1 /* LXPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3B1294A1FD53D5600895FA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F3B1294C1FD53D5600895FA1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F3B1294D1FD53D5600895FA1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F3B1294F1FD53D5600895FA1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F3B129501FD53D5600895FA1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F3B129531FD53D5600895FA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3B129551FD53D5600895FA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3B129581FD53D5600895FA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3B1295A1FD53D5600895FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3B1295F1FD53D5700895FA1 /* LXPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3B129631FD53D5700895FA1 /* LXPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXPlayerTests.m; sourceTree = "<group>"; };
+		F3B129651FD53D5700895FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3B1296A1FD53D5700895FA1 /* LXPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3B1296E1FD53D5700895FA1 /* LXPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXPlayerUITests.m; sourceTree = "<group>"; };
+		F3B129701FD53D5700895FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3B1297E1FD541D000895FA1 /* LxButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LxButton.h; sourceTree = "<group>"; };
+		F3B1297F1FD541D000895FA1 /* LxButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LxButton.m; sourceTree = "<group>"; };
+		F3B129811FD541D800895FA1 /* UILabel+LXLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LXLabel.h"; sourceTree = "<group>"; };
+		F3B129821FD541D800895FA1 /* UILabel+LXLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LXLabel.m"; sourceTree = "<group>"; };
+		F3B129841FD541DF00895FA1 /* UIView+LX_Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LX_Frame.h"; sourceTree = "<group>"; };
+		F3B129851FD541DF00895FA1 /* UIView+LX_Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LX_Frame.m"; sourceTree = "<group>"; };
+		F3B129871FD5431100895FA1 /* LXPlayer.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXPlayer.pch; sourceTree = "<group>"; };
+		F3B129881FD5438F00895FA1 /* UIColor+Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expanded.h"; sourceTree = "<group>"; };
+		F3B129891FD5438F00895FA1 /* UIColor+Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Expanded.m"; sourceTree = "<group>"; };
+		F3B1298B1FD5457300895FA1 /* LXAVPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXAVPlayer.h; sourceTree = "<group>"; };
+		F3B1298C1FD5459A00895FA1 /* LXAVPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXAVPlayView.h; sourceTree = "<group>"; };
+		F3B1298D1FD5459A00895FA1 /* LXAVPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXAVPlayView.m; sourceTree = "<group>"; };
+		F3B1298F1FD545C100895FA1 /* LXAVPlayControllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXAVPlayControllView.h; sourceTree = "<group>"; };
+		F3B129901FD545C100895FA1 /* LXAVPlayControllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXAVPlayControllView.m; sourceTree = "<group>"; };
+		F3B129921FD545D200895FA1 /* LXPlayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPlayModel.h; sourceTree = "<group>"; };
+		F3B129931FD545D200895FA1 /* LXPlayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPlayModel.m; sourceTree = "<group>"; };
+		F3B129961FD5485600895FA1 /* LXPlayVerticalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPlayVerticalController.h; sourceTree = "<group>"; };
+		F3B129971FD5485600895FA1 /* LXPlayVerticalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPlayVerticalController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3B129431FD53D5600895FA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB59C67D15B7B795069D18B /* libPods-LXPlayer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B1295C1FD53D5700895FA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B129671FD53D5700895FA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10FDBBFBADE5F91D12261764 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78A11FB53ECEAE66B60DE12B /* Pods-LXPlayer.debug.xcconfig */,
+				5682E24906F047E0B877AEF2 /* Pods-LXPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F392CB461FF61A1D00C98CFA /* LXSlider */ = {
+			isa = PBXGroup;
+			children = (
+				F392CB471FF61A1D00C98CFA /* LXProgressView.h */,
+				F392CB481FF61A1D00C98CFA /* LXProgressView.m */,
+				F392CB491FF61A1D00C98CFA /* LXSlider.h */,
+				F392CB4A1FF61A1D00C98CFA /* LXSlider.m */,
+				F392CB4B1FF61A1D00C98CFA /* LXSliderView.h */,
+				F392CB4C1FF61A1D00C98CFA /* LXSliderView.m */,
+			);
+			path = LXSlider;
+			sourceTree = "<group>";
+		};
+		F3B1293D1FD53D5600895FA1 = {
+			isa = PBXGroup;
+			children = (
+				F3B129481FD53D5600895FA1 /* LXPlayer */,
+				F3B129621FD53D5700895FA1 /* LXPlayerTests */,
+				F3B1296D1FD53D5700895FA1 /* LXPlayerUITests */,
+				F3B129471FD53D5600895FA1 /* Products */,
+				10FDBBFBADE5F91D12261764 /* Pods */,
+				FDF61F39C6751B1E45C1FF88 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F3B129471FD53D5600895FA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3B129461FD53D5600895FA1 /* LXPlayer.app */,
+				F3B1295F1FD53D5700895FA1 /* LXPlayerTests.xctest */,
+				F3B1296A1FD53D5700895FA1 /* LXPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3B129481FD53D5600895FA1 /* LXPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				F3B1294C1FD53D5600895FA1 /* AppDelegate.h */,
+				F3B1294D1FD53D5600895FA1 /* AppDelegate.m */,
+				F3B1294F1FD53D5600895FA1 /* ViewController.h */,
+				F3B129501FD53D5600895FA1 /* ViewController.m */,
+				F34472B620104BD30029FD61 /* LXPlayTypeListController.h */,
+				F34472B720104BD30029FD61 /* LXPlayTypeListController.m */,
+				F3B129951FD5481600895FA1 /* LXPlay */,
+				F3B1297D1FD53F4B00895FA1 /* Category */,
+				F3B1297C1FD53ED400895FA1 /* LXAVPlayer */,
+				F3B129521FD53D5600895FA1 /* Main.storyboard */,
+				F3B129551FD53D5600895FA1 /* Assets.xcassets */,
+				F3B129571FD53D5600895FA1 /* LaunchScreen.storyboard */,
+				F3B1295A1FD53D5600895FA1 /* Info.plist */,
+				F3B129871FD5431100895FA1 /* LXPlayer.pch */,
+				F3B129491FD53D5600895FA1 /* Supporting Files */,
+			);
+			path = LXPlayer;
+			sourceTree = "<group>";
+		};
+		F3B129491FD53D5600895FA1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3B1294A1FD53D5600895FA1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3B129621FD53D5700895FA1 /* LXPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3B129631FD53D5700895FA1 /* LXPlayerTests.m */,
+				F3B129651FD53D5700895FA1 /* Info.plist */,
+			);
+			path = LXPlayerTests;
+			sourceTree = "<group>";
+		};
+		F3B1296D1FD53D5700895FA1 /* LXPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F3B1296E1FD53D5700895FA1 /* LXPlayerUITests.m */,
+				F3B129701FD53D5700895FA1 /* Info.plist */,
+			);
+			path = LXPlayerUITests;
+			sourceTree = "<group>";
+		};
+		F3B1297C1FD53ED400895FA1 /* LXAVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				F3B1298B1FD5457300895FA1 /* LXAVPlayer.h */,
+				F3B1298C1FD5459A00895FA1 /* LXAVPlayView.h */,
+				F3B1298D1FD5459A00895FA1 /* LXAVPlayView.m */,
+				F3B1298F1FD545C100895FA1 /* LXAVPlayControllView.h */,
+				F3B129901FD545C100895FA1 /* LXAVPlayControllView.m */,
+				F367DFBE200F4F2300EA5DB5 /* LXPlayLoadingView.h */,
+				F367DFBD200F4F2300EA5DB5 /* LXPlayLoadingView.m */,
+				F3B129921FD545D200895FA1 /* LXPlayModel.h */,
+				F3B129931FD545D200895FA1 /* LXPlayModel.m */,
+				F392CB461FF61A1D00C98CFA /* LXSlider */,
+			);
+			path = LXAVPlayer;
+			sourceTree = "<group>";
+		};
+		F3B1297D1FD53F4B00895FA1 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F3B129881FD5438F00895FA1 /* UIColor+Expanded.h */,
+				F3B129891FD5438F00895FA1 /* UIColor+Expanded.m */,
+				F3B129811FD541D800895FA1 /* UILabel+LXLabel.h */,
+				F3B129821FD541D800895FA1 /* UILabel+LXLabel.m */,
+				F3B1297E1FD541D000895FA1 /* LxButton.h */,
+				F3B1297F1FD541D000895FA1 /* LxButton.m */,
+				F3B129841FD541DF00895FA1 /* UIView+LX_Frame.h */,
+				F3B129851FD541DF00895FA1 /* UIView+LX_Frame.m */,
+				F39F62691FFC6DAB00D6C1CF /* UIViewController+LXPlayerRotation.h */,
+				F39F626A1FFC6DAB00D6C1CF /* UIViewController+LXPlayerRotation.m */,
+				F39F626F1FFC6E4E00D6C1CF /* UINavigationController+LXPlayerRotation.h */,
+				F39F62701FFC6E4E00D6C1CF /* UINavigationController+LXPlayerRotation.m */,
+				F39F62721FFC6EEA00D6C1CF /* UITabBarController+LXPlayerRotation.h */,
+				F39F62731FFC6EEA00D6C1CF /* UITabBarController+LXPlayerRotation.m */,
+				F39F62781FFC716400D6C1CF /* UIWindow+LXCurrentViewController.h */,
+				F39F62791FFC716400D6C1CF /* UIWindow+LXCurrentViewController.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F3B129951FD5481600895FA1 /* LXPlay */ = {
+			isa = PBXGroup;
+			children = (
+				F3B129961FD5485600895FA1 /* LXPlayVerticalController.h */,
+				F3B129971FD5485600895FA1 /* LXPlayVerticalController.m */,
+				F34472B920104F3A0029FD61 /* LXPushNotSupportRotateController.h */,
+				F34472BA20104F3A0029FD61 /* LXPushNotSupportRotateController.m */,
+				F32FDB992010915000F3E4DE /* LXPresentSupportController.h */,
+				F32FDB9A2010915000F3E4DE /* LXPresentSupportController.m */,
+				F32FDB9C2010916D00F3E4DE /* LXPresentNotSupportController.h */,
+				F32FDB9D2010916D00F3E4DE /* LXPresentNotSupportController.m */,
+			);
+			path = LXPlay;
+			sourceTree = "<group>";
+		};
+		FDF61F39C6751B1E45C1FF88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBAC0C2DFB3F24900008F183 /* libPods-LXPlayer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3B129451FD53D5600895FA1 /* LXPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3B129731FD53D5700895FA1 /* Build configuration list for PBXNativeTarget "LXPlayer" */;
+			buildPhases = (
+				E90A6B8603DBDB32B60D5507 /* [CP] Check Pods Manifest.lock */,
+				F3B129421FD53D5600895FA1 /* Sources */,
+				F3B129431FD53D5600895FA1 /* Frameworks */,
+				F3B129441FD53D5600895FA1 /* Resources */,
+				29800162BF757747460A663B /* [CP] Embed Pods Frameworks */,
+				2477F7E0429244DE9D1C2370 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LXPlayer;
+			productName = LXPlayer;
+			productReference = F3B129461FD53D5600895FA1 /* LXPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3B1295E1FD53D5700895FA1 /* LXPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3B129761FD53D5700895FA1 /* Build configuration list for PBXNativeTarget "LXPlayerTests" */;
+			buildPhases = (
+				F3B1295B1FD53D5700895FA1 /* Sources */,
+				F3B1295C1FD53D5700895FA1 /* Frameworks */,
+				F3B1295D1FD53D5700895FA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3B129611FD53D5700895FA1 /* PBXTargetDependency */,
+			);
+			name = LXPlayerTests;
+			productName = LXPlayerTests;
+			productReference = F3B1295F1FD53D5700895FA1 /* LXPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F3B129691FD53D5700895FA1 /* LXPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3B129791FD53D5700895FA1 /* Build configuration list for PBXNativeTarget "LXPlayerUITests" */;
+			buildPhases = (
+				F3B129661FD53D5700895FA1 /* Sources */,
+				F3B129671FD53D5700895FA1 /* Frameworks */,
+				F3B129681FD53D5700895FA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3B1296C1FD53D5700895FA1 /* PBXTargetDependency */,
+			);
+			name = LXPlayerUITests;
+			productName = LXPlayerUITests;
+			productReference = F3B1296A1FD53D5700895FA1 /* LXPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3B1293E1FD53D5600895FA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "漫漫";
+				TargetAttributes = {
+					F3B129451FD53D5600895FA1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = BL3GGVA2PM;
+						ProvisioningStyle = Automatic;
+					};
+					F3B1295E1FD53D5700895FA1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F3B129451FD53D5600895FA1;
+					};
+					F3B129691FD53D5700895FA1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F3B129451FD53D5600895FA1;
+					};
+				};
+			};
+			buildConfigurationList = F3B129411FD53D5600895FA1 /* Build configuration list for PBXProject "LXPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3B1293D1FD53D5600895FA1;
+			productRefGroup = F3B129471FD53D5600895FA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3B129451FD53D5600895FA1 /* LXPlayer */,
+				F3B1295E1FD53D5700895FA1 /* LXPlayerTests */,
+				F3B129691FD53D5700895FA1 /* LXPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3B129441FD53D5600895FA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B129591FD53D5600895FA1 /* LaunchScreen.storyboard in Resources */,
+				F3B129561FD53D5600895FA1 /* Assets.xcassets in Resources */,
+				F3B129541FD53D5600895FA1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B1295D1FD53D5700895FA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B129681FD53D5700895FA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2477F7E0429244DE9D1C2370 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LXPlayer/Pods-LXPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29800162BF757747460A663B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LXPlayer/Pods-LXPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E90A6B8603DBDB32B60D5507 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3B129421FD53D5600895FA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B129861FD541DF00895FA1 /* UIView+LX_Frame.m in Sources */,
+				F3B129911FD545C100895FA1 /* LXAVPlayControllView.m in Sources */,
+				F3B129831FD541D800895FA1 /* UILabel+LXLabel.m in Sources */,
+				F392CB4F1FF61A1D00C98CFA /* LXSliderView.m in Sources */,
+				F3B129511FD53D5600895FA1 /* ViewController.m in Sources */,
+				F34472B820104BD30029FD61 /* LXPlayTypeListController.m in Sources */,
+				F3B1298A1FD5438F00895FA1 /* UIColor+Expanded.m in Sources */,
+				F32FDB9B2010915000F3E4DE /* LXPresentSupportController.m in Sources */,
+				F3B129981FD5485600895FA1 /* LXPlayVerticalController.m in Sources */,
+				F34472BB20104F3A0029FD61 /* LXPushNotSupportRotateController.m in Sources */,
+				F3B129801FD541D000895FA1 /* LxButton.m in Sources */,
+				F3B1298E1FD5459A00895FA1 /* LXAVPlayView.m in Sources */,
+				F39F626B1FFC6DAB00D6C1CF /* UIViewController+LXPlayerRotation.m in Sources */,
+				F3B1294E1FD53D5600895FA1 /* AppDelegate.m in Sources */,
+				F39F62741FFC6EEA00D6C1CF /* UITabBarController+LXPlayerRotation.m in Sources */,
+				F39F627A1FFC716400D6C1CF /* UIWindow+LXCurrentViewController.m in Sources */,
+				F32FDB9E2010916D00F3E4DE /* LXPresentNotSupportController.m in Sources */,
+				F3B1294B1FD53D5600895FA1 /* main.m in Sources */,
+				F392CB4E1FF61A1D00C98CFA /* LXSlider.m in Sources */,
+				F3B129941FD545D200895FA1 /* LXPlayModel.m in Sources */,
+				F392CB4D1FF61A1D00C98CFA /* LXProgressView.m in Sources */,
+				F367DFBF200F4F2300EA5DB5 /* LXPlayLoadingView.m in Sources */,
+				F39F62711FFC6E4E00D6C1CF /* UINavigationController+LXPlayerRotation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B1295B1FD53D5700895FA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B129641FD53D5700895FA1 /* LXPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B129661FD53D5700895FA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B1296F1FD53D5700895FA1 /* LXPlayerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3B129611FD53D5700895FA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3B129451FD53D5600895FA1 /* LXPlayer */;
+			targetProxy = F3B129601FD53D5700895FA1 /* PBXContainerItemProxy */;
+		};
+		F3B1296C1FD53D5700895FA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3B129451FD53D5600895FA1 /* LXPlayer */;
+			targetProxy = F3B1296B1FD53D5700895FA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3B129521FD53D5600895FA1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3B129531FD53D5600895FA1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3B129571FD53D5600895FA1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3B129581FD53D5600895FA1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3B129711FD53D5700895FA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F3B129721FD53D5700895FA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3B129741FD53D5700895FA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78A11FB53ECEAE66B60DE12B /* Pods-LXPlayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BL3GGVA2PM;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LXPlayer/LXPlayer.pch";
+				INFOPLIST_FILE = LXPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--.LXPlayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F3B129751FD53D5700895FA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5682E24906F047E0B877AEF2 /* Pods-LXPlayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BL3GGVA2PM;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LXPlayer/LXPlayer.pch";
+				INFOPLIST_FILE = LXPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--.LXPlayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F3B129771FD53D5700895FA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LXPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--.LXPlayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LXPlayer.app/LXPlayer";
+			};
+			name = Debug;
+		};
+		F3B129781FD53D5700895FA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LXPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--.LXPlayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LXPlayer.app/LXPlayer";
+			};
+			name = Release;
+		};
+		F3B1297A1FD53D5700895FA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LXPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--.LXPlayerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LXPlayer;
+			};
+			name = Debug;
+		};
+		F3B1297B1FD53D5700895FA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LXPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--.LXPlayerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LXPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3B129411FD53D5600895FA1 /* Build configuration list for PBXProject "LXPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3B129711FD53D5700895FA1 /* Debug */,
+				F3B129721FD53D5700895FA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3B129731FD53D5700895FA1 /* Build configuration list for PBXNativeTarget "LXPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3B129741FD53D5700895FA1 /* Debug */,
+				F3B129751FD53D5700895FA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3B129761FD53D5700895FA1 /* Build configuration list for PBXNativeTarget "LXPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3B129771FD53D5700895FA1 /* Debug */,
+				F3B129781FD53D5700895FA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3B129791FD53D5700895FA1 /* Build configuration list for PBXNativeTarget "LXPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3B1297A1FD53D5700895FA1 /* Debug */,
+				F3B1297B1FD53D5700895FA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3B1293E1FD53D5600895FA1 /* Project object */;
+}
