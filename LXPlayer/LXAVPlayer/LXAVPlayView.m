@@ -633,7 +633,7 @@ typedef NS_ENUM(NSInteger, PanDirection){
         
         if (self.isLandScape) {
             
-            //因为收控制器的影响是反的
+            //因为受控制器的影响是反的
             [self setOrientationLandscapeConstraint:UIInterfaceOrientationLandscapeRight];
         }else{
             [self setOrientationLandscapeConstraint:UIInterfaceOrientationLandscapeLeft];
@@ -663,18 +663,7 @@ typedef NS_ENUM(NSInteger, PanDirection){
         // 设置横屏
         
         [self setOrientationLandscapeConstraint:orientation];
-//        if (self.isLandScape) {
-//             [self setOrientationLandscapeConstraint:orientation];
-//        }else{
-//            if (orientation == UIInterfaceOrientationLandscapeRight) {
-//                orientation = UIInterfaceOrientationLandscapeLeft;
-//            }
-//            if (orientation == UIInterfaceOrientationLandscapeLeft) {
-//                orientation = UIInterfaceOrientationLandscapeRight;
-//            }
-//              [self setOrientationLandscapeConstraint:orientation];
-//
-//        }
+
        
     } else if (orientation == UIInterfaceOrientationPortrait) {
         // 设置竖屏
@@ -1090,22 +1079,5 @@ typedef NS_ENUM(NSInteger, PanDirection){
 }
 
 
-- (UIImage *)thumbnailImageForVideo:(NSURL *)videoURL atTime:(NSTimeInterval)time {
-    AVURLAsset *asset = [[AVURLAsset alloc] initWithURL:videoURL options:nil];
-    NSParameterAssert(asset);
-    AVAssetImageGenerator *assetImageGenerator =[[AVAssetImageGenerator alloc] initWithAsset:asset];
-    assetImageGenerator.appliesPreferredTrackTransform = YES;
-    assetImageGenerator.apertureMode =AVAssetImageGeneratorApertureModeEncodedPixels;
-    
-    CGImageRef thumbnailImageRef = NULL;
-    CFTimeInterval thumbnailImageTime = time;
-    NSError *thumbnailImageGenerationError = nil;
-    thumbnailImageRef = [assetImageGenerator copyCGImageAtTime:CMTimeMake(thumbnailImageTime, 60)actualTime:NULL error:&thumbnailImageGenerationError];
-    
-    if(!thumbnailImageRef)
-        NSLog(@"thumbnailImageGenerationError %@",thumbnailImageGenerationError);
-    
-    UIImage *thumbnailImage = thumbnailImageRef ? [[UIImage alloc]initWithCGImage:thumbnailImageRef] : nil;
-    return thumbnailImage;
-}
+
 @end
