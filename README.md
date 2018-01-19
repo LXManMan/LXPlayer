@@ -78,3 +78,5 @@
     return UIStatusBarStyleDefault; // your own style
 }
   ```
+
+介绍：[iOS 基于AVPlayer封装的播放器，全屏切换，切换播放源](https://www.jianshu.com/p/84abeb68fb62)
