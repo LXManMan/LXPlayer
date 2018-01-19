@@ -377,7 +377,7 @@
 
 -(LxButton *)backBtn{
     if (!_backBtn) {
-        _backBtn =[LxButton LXButtonNoFrameWithTitle:nil titleFont:nil Image:[UIImage imageNamed:@"返回"] backgroundImage:nil backgroundColor:nil titleColor:nil];
+        _backBtn =[LxButton LXButtonNoFrameWithTitle:nil titleFont:nil Image:[UIImage LXPlayer_ImageName:@"返回"] backgroundImage:nil backgroundColor:nil titleColor:nil];
         _backBtn.enlargeSize = CGSizeMake(40, 20);
     }
     return _backBtn;
@@ -391,8 +391,9 @@
 
 -(LxButton *)playBtn{
     if (!_playBtn) {
-         _playBtn =[LxButton LXButtonNoFrameWithTitle:nil titleFont:nil Image:[UIImage imageNamed:@"pause"] backgroundImage:nil backgroundColor:nil titleColor:nil];
-        [_playBtn setImage:[UIImage imageNamed:@"play"] forState:UIControlStateSelected];
+         _playBtn =[LxButton LXButtonNoFrameWithTitle:nil titleFont:nil Image:[UIImage LXPlayer_ImageName:@"pause"] backgroundImage:nil backgroundColor:nil titleColor:nil];
+        [_playBtn setImage:[UIImage LXPlayer_ImageName:@"play"] forState:UIControlStateSelected];
+        _playBtn.enlargeSize = CGSizeMake(30, 30);
     }
     return _playBtn;
 }
@@ -411,15 +412,15 @@
 }
 -(LxButton *)fullScreenBtn{
     if (!_fullScreenBtn) {
-        _fullScreenBtn =[LxButton LXButtonNoFrameWithTitle:nil titleFont:nil Image:[UIImage imageNamed:@"noScreen"] backgroundImage:nil backgroundColor:nil titleColor:nil];
-        [_fullScreenBtn setImage:[UIImage imageNamed:@"fullScreen"] forState:UIControlStateSelected];
+        _fullScreenBtn =[LxButton LXButtonNoFrameWithTitle:nil titleFont:nil Image:[UIImage LXPlayer_ImageName:@"noScreen"] backgroundImage:nil backgroundColor:nil titleColor:nil];
+        [_fullScreenBtn setImage:[UIImage LXPlayer_ImageName:@"fullScreen"] forState:UIControlStateSelected];
         _fullScreenBtn.enlargeSize = CGSizeMake(30, 30);
     }
     return _fullScreenBtn;
 }
 -(LxButton *)rePlaytbn{
     if (!_rePlaytbn) {
-        _rePlaytbn =[LxButton LXButtonNoFrameWithTitle:nil titleFont:nil Image:[UIImage imageNamed:@"repeat_video"] backgroundImage:nil backgroundColor:nil titleColor:nil];
+        _rePlaytbn =[LxButton LXButtonNoFrameWithTitle:nil titleFont:nil Image:[UIImage LXPlayer_ImageName:@"repeat_video"] backgroundImage:nil backgroundColor:nil titleColor:nil];
         _rePlaytbn.hidden = YES;
     }
     return _rePlaytbn;

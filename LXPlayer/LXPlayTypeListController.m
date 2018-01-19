@@ -23,6 +23,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.navigationItem.title = @"自定义视屏播放器";
+    
         [self setUp];
 }
 

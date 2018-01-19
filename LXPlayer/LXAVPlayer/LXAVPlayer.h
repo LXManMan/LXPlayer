@@ -23,6 +23,7 @@ typedef void (^BackBlock)();
 #import "LXPlayModel.h"
 #import "LXSlider.h"
 #import "LXPlayLoadingView.h"
+#import "UIImage+LXAVPlayer.h"
 #import "UIViewController+LXPlayerRotation.h"
 #import "UIWindow+LXCurrentViewController.h"
 #import "UINavigationController+LXPlayerRotation.h"

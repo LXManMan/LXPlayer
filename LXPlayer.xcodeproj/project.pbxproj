@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EBB59C67D15B7B795069D18B /* libPods-LXPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAC0C2DFB3F24900008F183 /* libPods-LXPlayer.a */; };
+		F316A2632011841C007D027C /* UIImage+LXAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F316A2622011841C007D027C /* UIImage+LXAVPlayer.m */; };
+		F316A26720118ABF007D027C /* LXAVPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F316A26620118ABF007D027C /* LXAVPlayer.bundle */; };
 		F32FDB9B2010915000F3E4DE /* LXPresentSupportController.m in Sources */ = {isa = PBXBuildFile; fileRef = F32FDB9A2010915000F3E4DE /* LXPresentSupportController.m */; };
 		F32FDB9E2010916D00F3E4DE /* LXPresentNotSupportController.m in Sources */ = {isa = PBXBuildFile; fileRef = F32FDB9D2010916D00F3E4DE /* LXPresentNotSupportController.m */; };
 		F34472B820104BD30029FD61 /* LXPlayTypeListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F34472B720104BD30029FD61 /* LXPlayTypeListController.m */; };
@@ -22,7 +24,6 @@
 		F39F627A1FFC716400D6C1CF /* UIWindow+LXCurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F39F62791FFC716400D6C1CF /* UIWindow+LXCurrentViewController.m */; };
 		F3B1294B1FD53D5600895FA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B1294A1FD53D5600895FA1 /* main.m */; };
 		F3B1294E1FD53D5600895FA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B1294D1FD53D5600895FA1 /* AppDelegate.m */; };
-		F3B129511FD53D5600895FA1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B129501FD53D5600895FA1 /* ViewController.m */; };
 		F3B129541FD53D5600895FA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B129521FD53D5600895FA1 /* Main.storyboard */; };
 		F3B129561FD53D5600895FA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3B129551FD53D5600895FA1 /* Assets.xcassets */; };
 		F3B129591FD53D5600895FA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B129571FD53D5600895FA1 /* LaunchScreen.storyboard */; };
@@ -59,6 +60,9 @@
 		5682E24906F047E0B877AEF2 /* Pods-LXPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-LXPlayer/Pods-LXPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		78A11FB53ECEAE66B60DE12B /* Pods-LXPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LXPlayer/Pods-LXPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		BBAC0C2DFB3F24900008F183 /* libPods-LXPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LXPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F316A2612011841C007D027C /* UIImage+LXAVPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+LXAVPlayer.h"; sourceTree = "<group>"; };
+		F316A2622011841C007D027C /* UIImage+LXAVPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LXAVPlayer.m"; sourceTree = "<group>"; };
+		F316A26620118ABF007D027C /* LXAVPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LXAVPlayer.bundle; sourceTree = "<group>"; };
 		F32FDB992010915000F3E4DE /* LXPresentSupportController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXPresentSupportController.h; sourceTree = "<group>"; };
 		F32FDB9A2010915000F3E4DE /* LXPresentSupportController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXPresentSupportController.m; sourceTree = "<group>"; };
 		F32FDB9C2010916D00F3E4DE /* LXPresentNotSupportController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXPresentNotSupportController.h; sourceTree = "<group>"; };
@@ -87,8 +91,6 @@
 		F3B1294A1FD53D5600895FA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F3B1294C1FD53D5600895FA1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F3B1294D1FD53D5600895FA1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F3B1294F1FD53D5600895FA1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F3B129501FD53D5600895FA1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F3B129531FD53D5600895FA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3B129551FD53D5600895FA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3B129581FD53D5600895FA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -194,8 +196,6 @@
 			children = (
 				F3B1294C1FD53D5600895FA1 /* AppDelegate.h */,
 				F3B1294D1FD53D5600895FA1 /* AppDelegate.m */,
-				F3B1294F1FD53D5600895FA1 /* ViewController.h */,
-				F3B129501FD53D5600895FA1 /* ViewController.m */,
 				F34472B620104BD30029FD61 /* LXPlayTypeListController.h */,
 				F34472B720104BD30029FD61 /* LXPlayTypeListController.m */,
 				F3B129951FD5481600895FA1 /* LXPlay */,
@@ -249,6 +249,9 @@
 				F367DFBD200F4F2300EA5DB5 /* LXPlayLoadingView.m */,
 				F3B129921FD545D200895FA1 /* LXPlayModel.h */,
 				F3B129931FD545D200895FA1 /* LXPlayModel.m */,
+				F316A2612011841C007D027C /* UIImage+LXAVPlayer.h */,
+				F316A2622011841C007D027C /* UIImage+LXAVPlayer.m */,
+				F316A26620118ABF007D027C /* LXAVPlayer.bundle */,
 				F392CB461FF61A1D00C98CFA /* LXSlider */,
 			);
 			path = LXAVPlayer;
@@ -411,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3B129591FD53D5600895FA1 /* LaunchScreen.storyboard in Resources */,
+				F316A26720118ABF007D027C /* LXAVPlayer.bundle in Resources */,
 				F3B129561FD53D5600895FA1 /* Assets.xcassets in Resources */,
 				F3B129541FD53D5600895FA1 /* Main.storyboard in Resources */,
 			);
@@ -488,8 +492,8 @@
 				F3B129861FD541DF00895FA1 /* UIView+LX_Frame.m in Sources */,
 				F3B129911FD545C100895FA1 /* LXAVPlayControllView.m in Sources */,
 				F3B129831FD541D800895FA1 /* UILabel+LXLabel.m in Sources */,
+				F316A2632011841C007D027C /* UIImage+LXAVPlayer.m in Sources */,
 				F392CB4F1FF61A1D00C98CFA /* LXSliderView.m in Sources */,
-				F3B129511FD53D5600895FA1 /* ViewController.m in Sources */,
 				F34472B820104BD30029FD61 /* LXPlayTypeListController.m in Sources */,
 				F3B1298A1FD5438F00895FA1 /* UIColor+Expanded.m in Sources */,
 				F32FDB9B2010915000F3E4DE /* LXPresentSupportController.m in Sources */,

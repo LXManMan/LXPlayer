@@ -23,6 +23,7 @@
 /*返回按钮的回调*/
 @property(nonatomic,copy)BackBlock backBlock;
 
-
+/**销毁播放器*/
+-(void)destroyPlayer;
 
 @end

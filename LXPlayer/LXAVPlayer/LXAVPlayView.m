@@ -48,7 +48,7 @@ typedef NS_ENUM(NSInteger, PanDirection){
 
 @property (nonatomic, assign) NSInteger                seekTime;/** 从xx秒开始播放视频 */
 
-@property(nonatomic,assign)CGFloat sumTime;
+@property(nonatomic,assign)   CGFloat sumTime;
 @property (nonatomic, strong) id           timeObserve;//定时观察者
 
 @property(nonatomic,assign)BOOL            isDragged;//slider上有手势在作用
@@ -74,10 +74,9 @@ typedef NS_ENUM(NSInteger, PanDirection){
 
 @end
 @implementation LXAVPlayView
-
--(void)dealloc{
-    NSLog(@"%@销毁了",self.class);
+-(void)destroyPlayer{
     
+    [self pause];
     [self removeObserver];
     [self removeNsnotification];
     
@@ -87,6 +86,19 @@ typedef NS_ENUM(NSInteger, PanDirection){
     [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationPortrait animated:NO];
     //恢复默认状态栏显示与否
     self.statusBar.hidden = self.isFullScreen;
+    
+    [self cancelHideSelector];
+    
+    [self.playerLayer removeFromSuperlayer];
+    [self removeFromSuperview];
+    
+    self.playerLayer = nil;
+    self.player = nil;
+    self.contollView = nil;
+}
+-(void)dealloc{
+    NSLog(@"%@销毁了",self.class);
+    
 }
 #pragma mark---移除通知----
 -(void)removeNsnotification{
@@ -649,7 +661,21 @@ typedef NS_ENUM(NSInteger, PanDirection){
 - (void)interfaceOrientation:(UIInterfaceOrientation)orientation {
     if (orientation == UIInterfaceOrientationLandscapeRight || orientation == UIInterfaceOrientationLandscapeLeft) {
         // 设置横屏
+        
         [self setOrientationLandscapeConstraint:orientation];
+//        if (self.isLandScape) {
+//             [self setOrientationLandscapeConstraint:orientation];
+//        }else{
+//            if (orientation == UIInterfaceOrientationLandscapeRight) {
+//                orientation = UIInterfaceOrientationLandscapeLeft;
+//            }
+//            if (orientation == UIInterfaceOrientationLandscapeLeft) {
+//                orientation = UIInterfaceOrientationLandscapeRight;
+//            }
+//              [self setOrientationLandscapeConstraint:orientation];
+//
+//        }
+       
     } else if (orientation == UIInterfaceOrientationPortrait) {
         // 设置竖屏
         [self setOrientationPortraitConstraint];
@@ -711,18 +737,27 @@ typedef NS_ENUM(NSInteger, PanDirection){
             }];
         }
     }else{
-        //播放器所在控制器不支持旋转，采用旋转view的方式实现
-        if (oriention == UIInterfaceOrientationLandscapeLeft){
+        
+        if (self.isFullScreenByUser) {
             [UIView animateWithDuration:0.25 animations:^{
                 self.transform = CGAffineTransformMakeRotation(M_PI / 2);
             }];
             [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight animated:NO];
-        }else if (oriention == UIInterfaceOrientationLandscapeRight) {
-            [UIView animateWithDuration:0.25 animations:^{
-                self.transform = CGAffineTransformMakeRotation( - M_PI / 2);
-            }];
-            [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeLeft animated:NO];
+        }else{
+            //播放器所在控制器不支持旋转，采用旋转view的方式实现
+            if (oriention == UIInterfaceOrientationLandscapeLeft){
+                [UIView animateWithDuration:0.25 animations:^{
+                    self.transform = CGAffineTransformMakeRotation(M_PI / 2);
+                }];
+                [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight animated:NO];
+            }else if (oriention == UIInterfaceOrientationLandscapeRight) {
+                [UIView animateWithDuration:0.25 animations:^{
+                    self.transform = CGAffineTransformMakeRotation( - M_PI / 2);
+                }];
+                [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeLeft animated:NO];
+            }
         }
+        
         
         [self mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.width.equalTo(@(Device_Width));
