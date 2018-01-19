@@ -61,6 +61,12 @@
   
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    
+    [self.playerview destroyPlayer];
+}
 -(BOOL)shouldAutorotate{
     return YES;
 }
