@@ -78,6 +78,7 @@
 }
   ```
 
+经测试，iOS11.2.2 在全屏切换的时候过渡动画混乱，iOS10.3没有问题，是系统的API有问题，只要屏幕发生了旋转，就会出现过渡动画的混乱问题。
 介绍：[iOS 基于AVPlayer封装的播放器，全屏切换，切换播放源](https://www.jianshu.com/p/84abeb68fb62)
 
 博客会同步到我的个人博客：[http://iphone20.top/](http://iphone20.top/)
